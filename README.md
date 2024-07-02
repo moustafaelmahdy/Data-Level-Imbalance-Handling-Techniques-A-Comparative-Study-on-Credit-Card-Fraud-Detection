@@ -14,7 +14,7 @@ After the data is pre-processed, three supervised machine learning models are us
 
 To evaluate the model, 2 approaches were used:
 - 80%-20% Train-Test Split
-- 5-fold Cross Validation
+- 5-fold Cross Validation   
 Since fraudulent transactions are of interest, it is more important for the models to correctly predict fraudulent transactions compared to
 legitimate ones. In other words, it is critical that the model is unable to miss any fraud among the transactions and correctly identify it rather than labelling a legitimate transaction as fraudulent. Hence, the selected metrics that focus on these objectives are:   
 - Precision
