@@ -1,63 +1,57 @@
-💳 Data-Level Imbalance Handling Techniques: A Comparative Study on Credit Card Fraud Detection
-🔗 Presentation
+# 🎯 **Data-Level-Imbalance-Handling-Techniques: A Comparative Study on Credit Card Fraud Detection**
+[📊 **Presentation**](https://pitch.com/v/thesis-presentation-wmzd5h)
 
-This project aims to compare multiple data imbalance handling techniques and machine learning models that yield an efficient credit card fraud detection system — capable of identifying whether each transaction is legitimate or fraudulent.
+This project aims to compare multiple _data imbalance handling techniques_ and _machine learning models_ to build an efficient credit card fraud detection system that can identify whether each transaction is **legitimate** or **fraudulent**. 
 
-This project was originally created as a joint university thesis by Malak Hatem, Masa Tantawy, and Moustafa El Mahdy (myself).
-This is a personal fork for portfolio and reference purposes, with full credit to all contributors.
-📦 Original repository: github.com/Masa-Tantawy/Data-Level-Imbalance-Handling-Techniques-A-Comparative-Study-on-Credit-Card-Fraud-Detection
+> _Originally created as a joint university thesis project by **Malak Hatem**, **Masa Tantawy**, and **Moustafa El Mahdy** (myself)._  
+> _This is a personal fork for portfolio and reference purposes, with full credit to all contributors._  
+> 🔗 __Original repository__: https://github.com/Masa-Tantawy/Data-Level-Imbalance-Handling-Techniques-A-Comparative-Study-on-Credit-Card-Fraud-Detection
 
-🛠️ Imbalance Handling Techniques
-To handle data imbalance before model training, the following methods were explored:
-➡️ Oversampling
-➡️ Undersampling
-➡️ Oversampling followed by Undersampling
+---
 
-Specifically, the techniques used include:
+## ⚠️ **Data Imbalance Handling Techniques**
 
-Undersampling:
+To handle imbalance before model training, the following techniques were explored:
 
-Random Undersampling (RUS)
+__1. Undersampling:__  
+- Random Undersampling (RUS)  
+- Tomek Links  
 
-TomekLinks
+__2. Oversampling:__  
+- Random Oversampling (ROS)  
+- SMOTE  
 
-Oversampling:
+__3. Oversampling followed by Undersampling:__  
+- SMOTE + Tomek (SmoteTomek)  
+- SMOTE + ENN (SmoteENN)  
 
-Random Oversampling (ROS)
+---
 
-SMOTE
+## 🤖 **Machine Learning Models Used**
 
-Oversampling + Undersampling:
+After pre-processing, the following supervised ML models were trained:  
+- **Random Forest**  
+- **Extreme Gradient Boosting (XGBoost)**  
+- **Light Gradient Boosting Machine (LightGBM)**  
 
-SMOTE + TomekLinks (SmoteTomek)
+---
 
-SMOTE + Edited Nearest Neighbors (SmoteENN)
+## 📈 **Evaluation Strategy**
 
-🤖 Machine Learning Models Used
-Once the data was preprocessed, the following supervised ML models were applied:
+Two evaluation approaches were used:  
+- _80%-20% Train-Test Split_  
+- _5-fold Cross Validation_
 
-Random Forest
+Since fraudulent transactions are the focus, it was critical that the models minimize **false negatives** (missed fraud).  
+So, the evaluation metrics emphasized were:  
+- **Precision**  
+- **Recall**  
+- **F1 Score**
 
-Extreme Gradient Boosting (XGBoost)
+---
 
-Light Gradient Boosting Machine (LightGBM)
+## 📂 **Datasets**
 
-📊 Evaluation Approach & Metrics
-Two evaluation approaches were employed:
+All required datasets can be found here:  
+[👉 Click to Access Dataset Folder](https://drive.google.com/drive/folders/1785b9aGd_wx_uBPkMSnZNKdmYrr8OeU0?usp=drive_link)
 
-80%-20% Train-Test Split
-
-5-Fold Cross Validation
-
-Since fraudulent transactions are the main focus, models are optimized to minimize false negatives (i.e., avoid missing any fraud).
-Thus, the chosen performance metrics are:
-
-Precision
-
-Recall
-
-F1 Score
-
-📁 Dataset Access
-All required datasets can be found here:
-👉 Google Drive Folder
